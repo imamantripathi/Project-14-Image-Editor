@@ -17,7 +17,7 @@ let flipHorizontal = 1;
 flipVertical = 1;
 const applyFilters = () => {
   previewImg.style.transform = `rotate(${rotate}deg) scale(${flipHorizontal},${flipVertical})`;
-  previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}) invert(${inversion}) grayscale(${grayscale})`;
+  previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
 };
 const loadImage = () => {
   let file = fileInput.files[0]; // getting file selected by user
